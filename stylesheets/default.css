@@ -1,6 +1,7 @@
 html {
   background-color: #FFFFD4;
   font-family: Futura;
+  color: #B24432;
 }
 
 #nav_bar {
@@ -30,7 +31,6 @@ a.nav_link:visited {
     width: 225px;
     float: left;
     margin-left: 15px;
-    text-align: justify;
     padding-right: 15px;
 }
 
@@ -73,11 +73,10 @@ a:visited {
 }
 
 p{
-  color: #B24432;
+    text-align: justify;
 }
 
 h1 {
-  color: #B24432;
   font-size: 2em;
 }
 
