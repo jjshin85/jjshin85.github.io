@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+  <title>Josh Shin</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<div id="nav_bar">
+      <ul>
+        <li><a class="nav_link" href="./index.html">HOME</a></li>
+        <li><a class="nav_link" href="./about.html">ABOUT</a></li>
+        <li><a class="nav_link" href="./blog/blog-template.html">BLOG</a></li>
+        <li><a class="nav_link" href="https://www.behance.net/jjshin85">PORTFOLIO</a></li>
+      </ul>
+    </div>
+<main>
+  <h1>"Display: inline" Vs "Display: inline-block"</h1>
+  <h2>The Battle of the Ages</h2>
+  <h3>10/18/2015</h3>
+
+  <section>
+    <p>
+      Oh, CSS, can't live with you, can't live without you. With the plethora of viewing options in the day and age, whether it be laptop, desktop, phone, or tablet, knowing how to display and format a website correctly is ever more important and ever more challenging... but fear not, for we'll cover a simple but important concept: 'display: inline' vs 'display: inline-block'.
+      <br>
+      <br>
+      By default, CSS is 'inline', meaning that if you add an element, it won't necessarily break-up the text or flow of elements.
+
+      <br>
+      <br>
+      For example, <span id="block_test">I've added special emphasis to this sentence.</span>
+      <br>
+      <br>
+      This is an inline element. If I change the padding or the margins, it pushes things away horizontally, but not vertically.
+      <br>
+      For example:
+    </p>
+    <p class="quotes">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <span id="block_test_2">exercitation</span> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    </p>
+    <p>
+      However, if I change the settings to 'inline-block' it treats the whole space within the border as a solid element.
+    </p>
+    <p class="quotes">
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud <span id="block_test_3">exercitation</span> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    </p>
+    <p>
+      Also, by setting the display to 'inline causes the elements to be viewed horizontally rather than vertically, something to consider when working with lists. For example, without specifying the display for 'inline' the following list is displayed as such:
+      <br>
+      <ul>
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+      </ul>
+      <br>
+      By changing the display property to 'inline' it gives the links horizontally.
+      <br>
+      <ul id="inline_test">
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+      </ul>
+      <br>
+      Now I'll show you the links again, but this time I'll add padding around the element. Bear in mind that padding is the space between the border of the element and the content of the element, meaning the entire block is the element itself.
+      <br>
+      <ul id="inline_test_2">
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+      </ul>
+      <br>
+      If you hover your cursor over the links, you'll notice that the text is the only clickable aspect. If you're creating buttons or something, this can be a problem. Thus, by changing the setting to 'inline-block', it treats the entire element as a solid whole, thus making the whole thing clickable.
+      <br>
+      <ul id="inline_test_3">
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+      </ul>
+
+    </p>
+
+
+
+  </section>
+</main>
