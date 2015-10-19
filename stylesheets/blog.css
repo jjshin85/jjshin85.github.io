@@ -60,3 +60,8 @@ main {
 #inline_test_3 a {
   padding: 1em;
 }
+
+#about_photo {
+  display: block;
+  margin: 0 auto;
+    }
