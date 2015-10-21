@@ -2,6 +2,8 @@ html {
   background-color: #FFFFD4;
   font-family: Futura;
   color: #B24432;
+  max-width: 1180px;
+  margin: auto;
 }
 
 #nav_bar {
