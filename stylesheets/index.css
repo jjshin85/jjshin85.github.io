@@ -9,12 +9,14 @@
 
 #blog_posts{
   margin-left: 20px;
+  display: inline-block;
 
 }
 
 #bpost_titles{
   font-size: 1.5em;
   list-style-type: none;
+
 }
 #bpost_titles li{
   margin-bottom: .5em;
