@@ -7,9 +7,9 @@ h3 {
 }
 
 main {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: auto;
   text-align: justify;
+  max-width: 900px;
 }
 
 #block_test {
