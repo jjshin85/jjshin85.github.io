@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>Josh Shin</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<div id="nav_bar">
+      <ul>
+        <li><a class="nav_link" href="./index.html">HOME</a></li>
+        <li><a class="nav_link" href="./about.html">ABOUT</a></li>
+        <li><a class="nav_link" href="./git.html">BLOG</a></li>
+        <li><a class="nav_link" href="https://www.behance.net/jjshin85">PORTFOLIO</a></li>
+      </ul>
+    </div>
+<main>
+  <h1>Arrays and Hashes</h1>
+
+  <h3>10/25/2015</h3>
+
+  <section>
+    <p>
+      Ah, arrays. If you're wondering what an array is, it's basically a table. If you're just looking at a list, then it's a 1-dimensional array. If you're looking at something with two rows or two columns, then you've got a multidimensional array. Each slot in an array can hold an element of information. How you define that element is up to you. For example, you could use an array to hold a list of names with phone numbers, easily adding or deleting names to the array. Each pairing of name and number would be its own array, which in turn would be an element of its 'parent' array of the phonebook.
+    </p>
+    <p>
+      In contrast to arrays stand hashes. A hash is a pairing of a key and its value. Each key must be unique, but a value can be repeated. Whereas each element of an array takes up its own slot in the array, hashes may take up less memory because multiple keys may point to the same value.
+      <br>
+      Wikipedia has a nice picture of this in action:
+      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Hash_table_4_1_1_0_0_1_0_LL.svg/300px-Hash_table_4_1_1_0_0_1_0_LL.svg.png" alt="Hash-table" style="width:300px;height:230px;">
+      <p>
+      And whereas the elements of an array are organized by a numerical index, hashes aren't organized in such a way. So if you looked up an item in an array, you'd look it up by its index number. With hashes, you'd look up the value of an element by its key.
+      <br>
+      This can make searching through elements of an array faster for a user, but adding elements into the middle of an array takes up much more time because you have to shift all the elements around. With a hash, they aren't organized by a numerical index, but an element's key is converted into a hash code, which is used to identify its value and where the information is stored. The function/algorithms that converts a key into a hash code reduces the key to a number, meaning it takes less memory to store. Also, if you input the same data using the same hash function/algorithms, it will return the same hash code, meaning it's a good way to verify data. Let's say you've got a data file that you've got two files, both 6 gb large, almost exactly the same but one line of code is different between them, then they'll produce two different hash codes. It's also impossible to reverse the process and recreate the data from the hash code, which makes hashes very useful for cryptography.
+    </p>
+
+  </section>
+</main>
