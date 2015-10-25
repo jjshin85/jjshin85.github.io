@@ -65,6 +65,7 @@ main {
   display: block;
   margin: 0 auto;
     }
+
  # 1d_array_list {
-  start: "0";
+  counter-reset: item 0;
  }
