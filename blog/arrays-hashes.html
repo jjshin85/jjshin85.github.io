@@ -44,10 +44,13 @@
       In this way, you basically have a table, each element of the parent array acting like a row in the table. The following is a random table I found online.
       <br>
       <br>
-      <img src="../imgs/table.png" alt="table" style="width:449px;height:239px;">
+      <img src="../imgs/fake_numbers.jpg" alt="table" style="width:310px;height:195px;">
       <br>
       <br>
-      Each slot in an array can hold an element of information. How you define that element is up to you. For example, you could use an array to hold a list of names with phone numbers, easily adding or deleting names to the array. Each pairing of name and number would be its own array, which in turn would be an element of its 'parent' array of the phonebook.
+      In the above example, the parent array is the table itself, and each element in the table is represented by a table row. You could think of it like each row is a train car, to extend my earlier metaphor. And then each element in the array is another array.
+      <br>
+      <br>
+      As with the above image, you could use an array to hold a list of names with phone numbers, easily adding or deleting names to the array. Each pairing of name and number would be its own array, which in turn would be an element of its 'parent' array of the phonebook. So the phonebook itself is an array, and entry in it is another array which holds the elements of name and number.
     </p>
     <p>
       In contrast to arrays are hashes. A hash is a pairing of a key and its value. Each key must be unique, but a value can be repeated. Whereas each element of an array takes up its own slot in the array, hashes may take up less memory because multiple keys may point to the same value.
