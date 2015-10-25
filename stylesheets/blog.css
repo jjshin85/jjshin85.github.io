@@ -65,6 +65,6 @@ main {
   display: block;
   margin: 0 auto;
     }
- # 1d_array_list li {
-  start: 0;
+ # 1d_array_list {
+  start: "0";
  }
