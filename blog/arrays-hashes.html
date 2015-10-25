@@ -64,7 +64,10 @@
       And whereas the elements of an array are organized by a numerical index, hashes aren't organized in such a way. So if you looked up an item in an array, you'd look it up by its index number. With hashes, you'd look up the value of an element by its key.
       <br>
       <br>
-      This can make searching through elements of an array faster for a user, but adding elements into the middle of an array takes up much more time because you have to shift all the elements around. With a hash, they aren't organized by a numerical index, but an element's key is converted into a hash code, which is used to identify its value and where the information is stored. The function/algorithms that converts a key into a hash code reduces the key to a number, meaning it takes less memory to store. Also, if you input the same data using the same hash function/algorithms, it will return the same hash code, meaning it's a good way to verify data. Let's say you've got a data file that you've got two files, both 6 gb large, almost exactly the same but one line of code is different between them, then they'll produce two different hash codes. It's also impossible to reverse the process and recreate the data from the hash code, which makes hashes very useful for cryptography.
+      This can make searching through elements of an array faster for a user, but adding elements into the middle of an array takes up much more time because you have to shift all the elements around. With a hash, they aren't organized by a numerical index, but an element's key is converted into a hash code, which is used to identify its value and where the information is stored. The function/algorithms that converts a key into a hash code reduces the key to a number, meaning it takes less memory to store.
+      <br>
+      <br>
+      Also, if you input the same data using the same hash function/algorithms, it will return the same hash code, meaning it's a good way to verify data. Let's say you've got a data file that you've got two files, both 6 gb large, almost exactly the same but one line of code is different between them, then they'll produce two different hash codes. It's also impossible to reverse the process and recreate the data from the hash code, which makes hashes very useful for cryptography.
     </p>
 
   </section>
