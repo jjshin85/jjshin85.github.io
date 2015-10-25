@@ -19,10 +19,34 @@
 
   <section>
     <p>
-      Ah, arrays. If you're wondering what an array is, it's basically a table. If you're just looking at a list, then it's a 1-dimensional array. If you're looking at something with two rows or two columns, then you've got a multidimensional array. Each slot in an array can hold an element of information. How you define that element is up to you. For example, you could use an array to hold a list of names with phone numbers, easily adding or deleting names to the array. Each pairing of name and number would be its own array, which in turn would be an element of its 'parent' array of the phonebook.
+      An array is a way to organize and keep track of information. It's basically a list... Well, the way I think of it is a train-car. You can put any kind of data object in the train cars.
+      <br>
+      <img src="..imgs/keanu_array.jpg" alt="Keanu train array" style="width:300px;height:225px;">
+      <br>
+      If you're just looking at a list, then it's a 1-dimensional array. It might look something like this:
+      <ol id="1d_array_list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ol>
+      <br>
+      Also important to keep in mind is that these arrays are '0 relative', meaning they start their count at 0. Notice 'Item 1' is in the index position 0, and 'Item 2' is in the index position '1'.
+      <br>
+      <br>
+      These are very useful if you have a lot of information to organize and sort through. You can also keep arrays of arrays.
+      <br>
+      <img src="../imgs/2d_keanu_array.jpg" alt="Keanu 2d array" style="width:300px;height:225px;">
+      <br>
+      In this way, you basically have a table, each element of the parent array acting like a row in the table.
+      <br>
+      <img src="../imgs/table.png" alt="table" style="width:449px;height:239px;">
+      <br>
+      Each slot in an array can hold an element of information. How you define that element is up to you. For example, you could use an array to hold a list of names with phone numbers, easily adding or deleting names to the array. Each pairing of name and number would be its own array, which in turn would be an element of its 'parent' array of the phonebook.
     </p>
+    <br>
     <p>
-      In contrast to arrays stand hashes. A hash is a pairing of a key and its value. Each key must be unique, but a value can be repeated. Whereas each element of an array takes up its own slot in the array, hashes may take up less memory because multiple keys may point to the same value.
+      In contrast to arrays are hashes. A hash is a pairing of a key and its value. Each key must be unique, but a value can be repeated. Whereas each element of an array takes up its own slot in the array, hashes may take up less memory because multiple keys may point to the same value.
       <br>
       <br>
       Wikipedia has a nice picture of this in action:

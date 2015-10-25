@@ -18,6 +18,11 @@ html {
 #nav_bar li {
   margin: 10px;
   margin-right: 15px;
+  display: inline;
+  margin: auto;
+  text-align: center;
+  vertical-align: center;
+  padding: 15px;
 }
 
 a.nav_link {
@@ -27,18 +32,6 @@ a.nav_link {
 }
 a.nav_link:visited {
   color: #FFFFD4;
-}
-
-
-
-#nav_bar li {
-
-  display: inline;
-  margin: auto;
-  text-align: center;
-  vertical-align: center;
-  padding: 15px;
-
 }
 
 

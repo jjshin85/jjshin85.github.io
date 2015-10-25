@@ -8,19 +8,20 @@
 }
 
 #blog_posts{
-  margin-left: 20px;
-  display: inline-block;
+  margin-top: 5px;
+  margin-left: 10px;
 
 }
 
 #bpost_titles{
   font-size: 1.5em;
   list-style-type: none;
-
+  margin-left: 10px;
+  padding-left: 20px;
 }
 #bpost_titles li{
-  margin-bottom: .5em;
-  margin-left: 5px;
+  margin-bottom: 1em;
+
 }
 
 figure {
