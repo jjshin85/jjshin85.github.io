@@ -35,19 +35,19 @@
       Also important to keep in mind is that these arrays are '0 relative', meaning they start their count at 0. Notice 'Item 1' is in the index position 0, and 'Item 2' is in the index position '1'.
       <br>
       <br>
-      These are very useful if you have a lot of information to organize and sort through. You can also keep arrays of arrays.
+      These are very useful if you have a lot of information to organize and sort through. You can also keep arrays of arrays. In this way, you basically have a table, each element of the parent array acting like a row in the table.
       <br>
       <br>
-      <img src="../imgs/2d_keanu_array.jpg" alt="Keanu 2d array" style="width:300px;height:225px;">
-      <br>
-      <br>
-      In this way, you basically have a table, each element of the parent array acting like a row in the table. The following is a random table I found online.
+      The following is a random table of a phonbook I found online.
       <br>
       <br>
       <img src="../imgs/fake_numbers.jpg" alt="table" style="width:310px;height:195px;">
       <br>
       <br>
-      In the above example, the parent array is the table itself, and each element in the table is represented by a table row. You could think of it like each row is a train car, to extend my earlier metaphor. And then each element in the array is another array.
+      In the above example, the parent array is the table itself, and each element in the table is represented by a table row. You could think of it like each row is a train car, to extend my earlier metaphor. And then each element in the array is another array, so each train car holds another train with its own cars.
+      <br>
+      <br>
+      <img src="../imgs/2d_keanu_array.jpg" alt="Keanu 2d array" style="width:300px;height:225px;">
       <br>
       <br>
       As with the above image, you could use an array to hold a list of names with phone numbers, easily adding or deleting names to the array. Each pairing of name and number would be its own array, which in turn would be an element of its 'parent' array of the phonebook. So the phonebook itself is an array, and entry in it is another array which holds the elements of name and number.
