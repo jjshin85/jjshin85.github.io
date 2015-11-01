@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+  <title>Josh Shin</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<div id="nav_bar">
+      <ul>
+        <li><a class="nav_link" href="./home.html">HOME</a></li>
+        <li><a class="nav_link" href="https://github.com/jjshin85">PROJECTS</a></li>
+        <li><a class="nav_link" href="https://www.behance.net/jjshin85">PORTFOLIO</a></li>
+        <li><a class="nav_link" href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+<main>
+  <h1>Enumerables and the Map Method</h1>
+
+  <h3>1/1/15</h3>
+
+  <section>
+    <p>
+      Enumerables are basically '.each' methods that work on different class types. They're 'mixins', meaning they're method blocks of code that can be mixed in with different classes. They iterate through a collection and execute the code you want it to on each element of a collection of data. So if you're creating an enumberable collection, also known as a module, you only need to define the methods once, define what they do for each class of object, and then that collection of methods is bundled together. Each class that has its own enumerable method in the module can use that enumerable.
+    </p>
+    <p>
+      First let's look at the <span class="block">map</span> method. Let's say that we have an array of numbers:
+      <br>
+      <br>
+      <span class="block">
+        nums = [21,19,37,55]
+      </span>
+      <br>
+      <br>
+      Now we want to alter each element in the collection by the same degree, such as adding 10 to everything. We can use this using the <span class="block">map</span> method:
+      <br>
+      <br>
+      <span class="block">
+        nums.map! { |element| element*2 }
+        <br>
+        ==> nums = [441, 361, 1369]
+      </span>
+      <br>
+      <br>
+
+    </p>
+
+  </section>
+</main>

@@ -35,3 +35,10 @@ footer {
   list-style-type: none;
 }
 
+.block {
+  display: inline-block;
+  background-color: #BDBDBD;
+  padding-left: .25em;
+  padding-right: .25em;
+
+}
