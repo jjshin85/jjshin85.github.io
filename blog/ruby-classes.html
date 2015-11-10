@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+  <title>Josh Shin</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<div id="nav_bar">
+      <ul>
+        <li><a class="nav_link" href="./home.html">HOME</a></li>
+        <li><a class="nav_link" href="https://github.com/jjshin85">PROJECTS</a></li>
+        <li><a class="nav_link" href="https://www.behance.net/jjshin85">PORTFOLIO</a></li>
+        <li><a class="nav_link" href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+<main>
+  <h1>Ruby Classes</h1>
+  <h3>11/9/15</h3>
+
+  <section>
+    <p>
+      Since at least the time of Plato, philosophy has been concerned with the difference between existence and essence. The thing itself and the idea which informs the thing. Another way to think about this is the original definition of stereotype, it's like a printing plate from which you print out copies of something. If you have a triangle, there are certain things it must have, qualities that all triangles share: it must have 3 adjacent sides, 3 angles that add up to 180 degrees. Similarly, classes in ruby are for items that will share attributes and behaviors.
+    </p>
+    <p>
+      Suppose you own a car manufacturing factory. You want to make multiple copies of a car.
+    </p>
+    <blockquote class="block">
+        class Car
+        <br>
+        <br>
+        &nbsp; def initialize(num_doors, engine, color)
+        <br>
+          &nbsp; &nbsp; @num_doors = num_doors
+          <br>
+          &nbsp; &nbsp; @engine = engine
+          <br>
+          &nbsp; &nbsp; @color = color
+          <br>
+          &nbsp; &nbsp; @engine_on = false
+          <br>
+          &nbsp; &nbsp; @is_accelerating = false
+          <br>
+        &nbsp; end
+          <br>
+          <br>
+        &nbsp; def start_engine
+        <br>
+          &nbsp; &nbsp; @engine_on = true
+          <br>
+        &nbsp; end
+        <br>
+        <br>
+        &nbsp; def accelerate
+        <br>
+          &nbsp; &nbsp; @speed = 1
+          <br>
+          &nbsp; &nbsp; @is_moving = true
+          <br>
+          &nbsp; &nbsp; while @is_moving = true
+          <br>
+            &nbsp; &nbsp; &nbsp; @speed += 1
+            <br>
+          &nbsp; &nbsp; end
+          <br>
+        &nbsp; end
+        <br>
+        <br>
+        &nbsp; def decelerate
+        <br>
+          &nbsp; &nbsp; while is_moving = true
+          <br>
+            &nbsp; &nbsp; &nbsp; @speed -= 1
+            <br>
+          &nbsp; &nbsp; end
+          <br>
+          &nbsp; &nbsp; if @speed = 0
+          <br>
+          &nbsp; &nbsp; &nbsp; is_moving = false
+          <br>
+          &nbsp; &nbsp; end
+          <br>
+        &nbsp; end
+        <br>
+        <br>
+      end
+    </blockquote>
+    <p>
+      In the above example of code, for class car the first method is to initialize the object, like assembling a car in a factory line. When you create it, you want to decide what color it is, how many doors it'll have, and what kind of engine it'll have. And then we use instance variables (those variables with the '@' symbol) to pass values from method to method and also to store values for each car object. Each car object comes with those attributes, and it also comes with methods which can be thought of as car behaviors. All objects in this class, so all cars can accelerate, decelerate, or have their engines turned on. And the values of these attributes can be stored in the instance variables. Also, in this way those values can be passed from method to method. If the car is accelerating, we can increase the value of @speed. Similarly, we can give have the method decelerate modify that value and even bring the car to a stop.
+    </p>
+
+  </section>
+</main>
