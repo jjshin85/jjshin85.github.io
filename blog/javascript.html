@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+  <title>Josh Shin</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<div id="nav_bar">
+      <ul>
+        <li><a class="nav_link" href="./home.html">HOME</a></li>
+        <li><a class="nav_link" href="https://github.com/jjshin85">PROJECTS</a></li>
+        <li><a class="nav_link" href="https://www.behance.net/jjshin85">PORTFOLIO</a></li>
+        <li><a class="nav_link" href="./contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+<main>
+  <h1>Looping in Ruby and Looping in Javascript</h1>
+
+  <h3>11/17/15</h3>
+
+  <section>
+    <p>
+      There are a variety of ways to loop in Ruby, using the <span class="block">.each</span> method, or the <span class="block">for</span> or <span class="block">while</span> loops. The use of these methods looks like this:
+    </p>
+    <p>
+      <span class="block">
+        array = [1,1,1,1]
+        <br>
+        sum = 0
+        <br>
+        for i in 0...array.size
+        <br>
+        &nbsp; sum += array[i]
+        <br>
+        end
+        <br>
+        #=> 4
+      </span>
+    </p>
+    <p>
+      In the above example, <span class="block">for i in 0...array.size</span> tells ruby to iterate for variable i from 0 to 4, which is the size of the array. All done with a minimum of expressions. Also, the <span class = "block">...</span> means to exclude the last digit, whereas <span class ="block">...</span> would mean to include it within the range.
+    </p>
+    <p>
+      Javascript is a bit more cumbersome:
+    </p>
+    <p>
+      <span class="block">
+        var array = [1,1,1,1];
+        <br>
+        var sum = 0;
+        for (var i = 0; i < array.length; i++)
+        <br>
+        {
+        <br>
+        &nbsp; sum += array[i];
+        <br>
+        }
+      </span>
+    </p>
+    <p>
+      After declaring variable <span class="block">i</span>, you tell the program the range you want it to go until, which in this case is <span class="block">i < array.length</span>. Then you declare how you want to iterate <span class="block">i</span>, which in this case is by adding 1 to each iteration, which is represented by <span class="block">i++</span>. And then all of these are separated by a semicolon. Also important to note is you must specify that each variable is a variable by putting <span class="block">var</span> in front of the variable name every time you first declare it.
+    </p>
+    <p>
+      Ruby also has more built in methods that will allow you to loop through something, such as <span class="block">.each</span>, or span class="block">.map</span>.
+    </p>
+  </section>
+</main>
